@@ -3,16 +3,17 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 import matplotlib.pyplot as plt
 
+
 # 1) load data
-iris = load_iris()
+iris_data = load_iris()
 
 # 2） observe data
-print(type(iris))  # <class 'sklearn.utils.Bunch'> Bunch类似dict，对dict进行了封装。
-print(iris.keys())  # dict_keys(['data', 'target', 'target_names', 'DESCR', 'feature_names', 'filename'])
-print(type(iris.data))  # <class 'numpy.ndarray'>
-print(type(iris.target))  # <class 'numpy.ndarray'>
-data = iris.data
-target = iris.target
+print(type(iris_data))  # <class 'sklearn.utils.Bunch'> Bunch类似dict，对dict进行了封装。
+print(iris_data.keys())  # dict_keys(['data', 'target', 'target_names', 'DESCR', 'feature_names', 'filename'])
+print(type(iris_data.data))  # <class 'numpy.ndarray'>
+print(type(iris_data.target))  # <class 'numpy.ndarray'>
+data = iris_data.data
+target = iris_data.target
 print(data.shape)  # (150, 4) 150行4列
 print(target.shape)  # (150,) 150行1列
 print(data[:3, :])
