@@ -1,4 +1,7 @@
-data.npz is the data source for fitting. 
+data.npz是数据文件。
+它有两个字段，X和d。
 
-It has two attributes: X and d .
+在给定输入x时，经过我们的模型，产生的输出y要和真实的值d越接近越好。
+
+使用的是梯度下降法来求解模型中待定的参数。
 
