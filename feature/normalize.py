@@ -6,3 +6,5 @@ normalizer = Normalizer()
 normalizer.fit(data)
 print(normalizer.transform(data))
 print(normalizer.transform([[2, 2]]))
+
+
